@@ -32,8 +32,7 @@ Students at the Dahlia, Cengal and Kesinai colleges had to take their laundry to
 **Total = weight price + temperature price** (both temperature prices are added when you choose laundry *and* dry-cleaning)
 
 ## Demo
-<!-- Upload the video to YouTube as Unlisted and paste the link, or drag a short clip (<10 MB) into this README on GitHub -->
-▶️ [Watch the demo](<!-- video link -->)
+▶️ [Watch the demo](<!-- (https://youtu.be/_edde9KxzAg?si=DNl5ZFwvae2hdUCM) -->)
 
 <!-- Add a screenshot of the receipt: docs/receipt.png -->
 
@@ -53,13 +52,8 @@ source_code.cpp   # full program
 docs/             # report (pseudocode, flowchart, sample output), slides
 ```
 
-## Team
-| Member | Role |
-|---|---|
-| **Nur Hamizah Amnani (Mija)** | <!-- your part, e.g. login system & pricing functions --> |
-| Nik Nabila Sofia | <!-- --> |
-| Syazmera Zurihan | <!-- --> |
-| Natasha Farhana Ibram | <!-- --> |
+## My Contribution
+<!-- e.g. Built the login system and pricing functions, drew the flowcharts -->
 
 ## Reflection
 This was my first programming project. Looking back, I'd improve it by:
