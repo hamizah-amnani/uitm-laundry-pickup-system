@@ -8,9 +8,9 @@ Group project for CSC126 (Fundamentals of Algorithms & Computer Problem Solving)
 
 Students at Dahlia, Cengal and Kesinai had to send their laundry to shops outside campus, which were far away and not cheap. We proposed a pickup service for the college's student council (Jawatan Perwakilan Kolej) where students order through this program and get a receipt as proof of payment.
 
-## Demo
+## Video Presentation
 
-[![Watch the demo](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/_edde9KxzAg?si=2a-3-BCmJP0L5vbz)
+[![Watch the presentation]](https://youtu.be/_edde9KxzAg?si=2a-3-BCmJP0L5vbz)
 
 ## How it works
 
