@@ -1,62 +1,60 @@
 # UiTM Arau Laundry Pickup Service
 
-A C++ console app that lets students in UiTM Arau's residential colleges book a laundry and dry-cleaning pickup, then calculates the price and prints a receipt.
+A C++ console program for booking laundry and dry-cleaning pickups at UiTM Arau's residential colleges. It calculates the price from the weight and temperature chosen and prints a receipt.
 
-**Course:** CSC126 – Fundamentals of Algorithms & Computer Problem Solving
-**Programme:** Diploma in Computer Science, UiTM Perlis (Arau)
-**Type:** Group project (4 members) · February 2023
+Group project for CSC126 (Fundamentals of Algorithms & Computer Problem Solving), Diploma in Computer Science, UiTM Perlis. February 2023.
 
----
+## Background
 
-## The Problem
-Students at the Dahlia, Cengal and Kesinai colleges had to take their laundry to shops far off campus that weren't priced for students. This system, proposed for the college's student council (Jawatan Perwakilan Kolej), lets them order a pickup and get a clear receipt as proof of payment.
-
-## Features
-- 🔐 **Student login** checks that the ID is numeric and matches the stored credentials
-- 🏠 **College selection**: Dahlia, Cengal or Kesinai
-- 🧺 **Three service types**: laundry only, dry-cleaning only, or both
-- ⚖️ **Weight-based pricing**: 5–30 kg, in 5 kg bags
-- 🌡️ **Temperature options**: cold/warm/hot for laundry, low/medium/high for dry-cleaning
-- 🧾 **Receipt** showing student ID, college, service type and total payment
-
-## Pricing
-| Weight | Price | | Temperature code | Laundry | Dry-cleaning | Price |
-|---|---|---|---|---|---|---|
-| 5 kg | RM3.00 | | A | Cold | Low | RM4.00 |
-| 10 kg | RM3.50 | | B | Warm | Medium | RM5.00 |
-| 15 kg | RM4.00 | | C | Hot | High | RM6.00 |
-| 20 kg | RM4.50 | | | | | |
-| 25 kg | RM5.00 | | | | | |
-| 30 kg | RM5.50 | | | | | |
-
-**Total = weight price + temperature price** (both temperature prices are added when you choose laundry *and* dry-cleaning)
+Students at Dahlia, Cengal and Kesinai had to send their laundry to shops outside campus, which were far away and not cheap. We proposed a pickup service for the college's student council (Jawatan Perwakilan Kolej) where students order through this program and get a receipt as proof of payment.
 
 ## Demo
-▶️ [Watch the demo](<!-- (https://youtu.be/_edde9KxzAg?si=DNl5ZFwvae2hdUCM) -->)
 
-<!-- Add a screenshot of the receipt: docs/receipt.png -->
+[![Watch the demo](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://youtu.be/_edde9KxzAg?si=2a-3-BCmJP0L5vbz)
 
-## Concepts Used
-Functions and prototypes · arrays · `switch` / `if-else` selection · `while` loops · input validation with `isdigit` · formatted output with `iomanip`
+## How it works
 
-## How to Run
+1. The student logs in with their student ID and password.
+2. They pick their college, the service (laundry, dry-cleaning or both), the laundry weight and the temperature.
+3. The program adds up the weight price and the temperature price, then prints a receipt.
+
+## Pricing
+
+| Weight | Price |
+|---|---|
+| 5 kg | RM3.00 |
+| 10 kg | RM3.50 |
+| 15 kg | RM4.00 |
+| 20 kg | RM4.50 |
+| 25 kg | RM5.00 |
+| 30 kg | RM5.50 |
+
+| Code | Laundry | Dry-cleaning | Price |
+|---|---|---|---|
+| A | Cold | Low | RM4.00 |
+| B | Warm | Medium | RM5.00 |
+| C | Hot | High | RM6.00 |
+
+If both services are chosen, both temperature prices are added.
+
+## Running it
+
 ```bash
 g++ -std=c++14 source_code.cpp -o laundry
 ./laundry
 ```
-Demo login: `1234567890` / `demo123` (or `1111111111` / `demo456`)
 
-## Repository Contents
-```
-source_code.cpp   # full program
-docs/             # report (pseudocode, flowchart, sample output), slides
-```
+Demo login: `1234567890` / `demo123`
 
-## My Contribution
-<!-- e.g. Built the login system and pricing functions, drew the flowcharts -->
+## Files
 
-## Reflection
-This was my first programming project. Looking back, I'd improve it by:
-- Storing credentials securely instead of hardcoding them
-- Rejecting invalid inputs, such as weights that aren't multiples of 5 or unknown college codes
-- Saving orders to a file so they persist between runs
+- `source_code.cpp` – the program
+- `docs/` – project report (pseudocode, flowcharts, sample output) and presentation slides
+
+## My part
+
+<!-- e.g. I wrote the login system and the pricing functions, and drew the flowcharts. -->
+
+## What I'd change now
+
+This was my first programming project. If I rewrote it, I would stop hardcoding the login details, reject invalid input like a 12 kg weight or an unknown college code, and save orders to a file.
