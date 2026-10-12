@@ -51,10 +51,6 @@ Demo login: `1234567890` / `demo123`
 - `source_code.cpp` – the program
 - `docs/` – project report (pseudocode, flowcharts, sample output) and presentation slides
 
-## My part
-
-<!-- e.g. I wrote the login system and the pricing functions, and drew the flowcharts. -->
-
 ## What I'd change now
 
 This was my first programming project. If I rewrote it, I would stop hardcoding the login details, reject invalid input like a 12 kg weight or an unknown college code, and save orders to a file.
